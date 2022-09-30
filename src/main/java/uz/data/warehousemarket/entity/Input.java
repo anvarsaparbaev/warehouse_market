@@ -29,10 +29,10 @@ public class Input {
     @ManyToOne
     private Currency currency;
 
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     private String factureNumber;
 
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     private String code;
 
 }
